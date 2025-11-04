@@ -9,11 +9,18 @@
 <body>
   <div class="container">
     <h1>Idea Prompting Application</h1>
-    <form id="idea-form">
-      <textarea id="idea-input" placeholder="Enter your idea here..."></textarea>
-      <button type="submit">Generate Automation Plan</button>
-    </form>
-    <div id="automation-plan"></div>
+    <div class="main-content">
+      <div class="input-column">
+        <form id="idea-form">
+          <textarea id="idea-input" placeholder="Enter your idea here..."></textarea>
+          <button type="submit">Generate Automation Plan</button>
+        </form>
+      </div>
+      <div class="output-column">
+        <img src="images/background.jpg" alt="AI-generated image" id="ai-image">
+        <div id="automation-plan"></div>
+      </div>
+    </div>
   </div>
   <script>
     document.getElementById('idea-form').addEventListener('submit', async (e) => {
